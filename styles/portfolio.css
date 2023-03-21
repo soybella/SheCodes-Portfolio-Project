@@ -1,6 +1,8 @@
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
+  --primary-color: #49beb7;
+  --secondary-color: #085f63;
+  --hero-color: #f1f1f1;
+  --backup-color: #f5e1da;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -9,8 +11,8 @@ body {
 }
 
 h1,
-h2,
-h3 {
+h2 {
+  font-family: Playfair Display;
   text-align: center;
 }
 
@@ -24,9 +26,16 @@ h2 {
   margin-left: 0;
 }
 
+h3,
+p,
+a {
+  font-family: Poppins;
+}
+
 h3 {
   font-size: 24px;
   opacity: 0.7;
+  text-align: center;
 }
 
 p {
@@ -36,8 +45,19 @@ p {
   text-align: start;
 }
 
+.navbar-list {
+  display: flex;
+  justify-content: right;
+}
+
+.hero {
+  background: var(--hero-color);
+  padding: 50px;
+}
+
 .container-bg {
-  background: lavender;
+  background: var(--backup-color);
+  border-radius: 10px;
 }
 
 .container {
@@ -71,8 +91,10 @@ p {
 }
 
 .about-link {
+  background: white;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+  box-shadow: var(--box-shadow);
 }
 
 .homepage-link {
@@ -135,5 +157,11 @@ p {
     display: block;
     margin: 0 auto;
     width: fit-content;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-list {
+    justify-content: left;
   }
 }
