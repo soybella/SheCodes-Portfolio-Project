@@ -86,8 +86,7 @@ img {
   width: 350px;
 }
 
-.project-description,
-about-content {
+.project-description {
   padding: 0 50px 0;
 }
 
@@ -149,8 +148,7 @@ about-content {
   text-decoration: underline;
 }
 
-.project-app-link,
-.view-projects-link {
+.button-link {
   border-radius: 5px;
   padding: 20px 15px;
   text-transform: capitalize;
@@ -158,6 +156,16 @@ about-content {
   background: var(--primary-color);
   color: white;
   box-shadow: var(--box-shadow);
+}
+
+.work-inquiry-link {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.work-inquiry h1 {
+  font-size: 48px;
 }
 
 .grid img {
@@ -191,8 +199,7 @@ about-content {
     width: 100%;
   }
 
-  .project-app-link,
-  .view-projects-link {
+  .button-link {
     display: block;
     margin: 0 auto;
     width: fit-content;
