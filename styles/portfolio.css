@@ -4,6 +4,8 @@
   --hero-color: #f1f1f1;
   --backup-color: #f5e1da;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --header-font: Playfair Display;
+  --paragraph-font: Poppins;
 }
 
 body {
@@ -12,7 +14,7 @@ body {
 
 h1,
 h2 {
-  font-family: Playfair Display;
+  font-family: var(--header-font);
   text-align: center;
 }
 
@@ -29,13 +31,18 @@ h2 {
 h3,
 p,
 a {
-  font-family: Poppins;
+  font-family: var(--paragraph-font);
 }
 
 h3 {
   font-size: 24px;
   opacity: 0.7;
   text-align: center;
+}
+
+h4 {
+  font-size: 24px;
+  opacity: 0.7;
 }
 
 p {
@@ -68,14 +75,24 @@ img {
   padding: 20px;
 }
 
-.portfolio-image {
+.portfolio-image,
+.portfolio-profile-image {
   display: flex;
   justify-items: center;
   margin: 40px auto;
 }
 
-.project-description {
+.portfolio-profile-image {
+  width: 350px;
+}
+
+.project-description,
+about-content {
   padding: 0 50px 0;
+}
+
+.about-content {
+  padding-top: 30px;
 }
 
 .navigation-links {
@@ -132,7 +149,8 @@ img {
   text-decoration: underline;
 }
 
-.project-app-link {
+.project-app-link,
+.view-projects-link {
   border-radius: 5px;
   padding: 20px 15px;
   text-transform: capitalize;
@@ -152,7 +170,8 @@ img {
 }
 
 @media (max-width: 767px) {
-  h2 {
+  h2,
+  h4 {
     text-align: center;
     width: 100%;
   }
@@ -161,12 +180,19 @@ img {
     text-align: center;
   }
 
-  .project-description {
+  .portfolio-profile-image {
+    width: 350px;
+    height: auto;
+  }
+
+  .project-description,
+  .about-content {
     display: grid;
     width: 100%;
   }
 
-  .project-app-link {
+  .project-app-link,
+  .view-projects-link {
     display: block;
     margin: 0 auto;
     width: fit-content;
