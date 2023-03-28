@@ -53,7 +53,9 @@ p {
 }
 
 img {
-  border-radius: 10px;
+  border-radius: 6px;
+  border: 1.5px solid rgba(0, 0, 0, 0.3);
+  box-shadow: var(--box-shadow);
 }
 
 .navbar-list {
@@ -67,7 +69,7 @@ img {
 }
 
 .container-bg {
-  background: var(--backup-color);
+  background: var(--hero-color);
   border-radius: 10px;
 }
 
@@ -140,12 +142,11 @@ img {
   display: flex;
   justify-content: center;
   color: var(--primary-color);
-  font-size: 28px;
-  text-decoration: none;
 }
 
-.email-link:hover {
-  text-decoration: underline;
+.email-link a {
+  text-decoration: none;
+  color: black;
 }
 
 .button-link {
@@ -174,11 +175,11 @@ img {
   text-align: left;
 }
 
-.project-header {
+.project-header h3 {
   font-size: 24px;
   color: black;
-  font-weight: 700;
-  font-family: var(--header-font);
+  font-weight: bolder;
+  opacity: 1;
 }
 
 .project-paragraph {
