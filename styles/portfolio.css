@@ -116,6 +116,10 @@ img {
   color: white;
 }
 
+.contact-header {
+  color: var(--secondary-color);
+}
+
 .about-link {
   background: white;
   color: var(--primary-color);
@@ -138,15 +142,19 @@ img {
   text-align: center;
 }
 
-.email-link {
+.link {
   display: flex;
   justify-content: center;
   color: var(--primary-color);
 }
 
-.email-link a {
+.link a {
   text-decoration: none;
   color: black;
+}
+
+.link:hover a {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .button-link {
@@ -185,11 +193,6 @@ img {
 .project-paragraph {
   font-size: 14px;
   margin-top: 10px;
-}
-
-.email-link {
-  font-size: 24px;
-  color: black;
 }
 
 .social-media ul {
