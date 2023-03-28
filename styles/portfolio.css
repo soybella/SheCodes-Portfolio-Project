@@ -174,6 +174,39 @@ img {
   text-align: left;
 }
 
+.project-header {
+  font-size: 24px;
+  color: black;
+  font-weight: 700;
+  font-family: var(--header-font);
+}
+
+.project-paragraph {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.email-link {
+  font-size: 24px;
+  color: black;
+}
+
+.social-media ul {
+  display: block;
+  list-style-type: none;
+  text-align: center;
+}
+
+.icons li {
+  display: inline;
+  padding: 20px;
+  color: var(--secondary-color);
+}
+
+.icons i {
+  font-size: 25px;
+}
+
 .grid img {
   width: fit-content;
   aspect-ratio: 1/1;
