@@ -153,6 +153,14 @@ img {
   text-align: center;
 }
 
+.email-link {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+}
+
 .link {
   display: flex;
   justify-content: center;
@@ -228,8 +236,8 @@ img {
 }
 
 .grid img {
-  width: fit-content;
-  aspect-ratio: 1/1;
+  width: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 #contact {
