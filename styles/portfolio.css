@@ -240,6 +240,11 @@ img {
   aspect-ratio: 1 / 1;
 }
 
+.footer {
+  display: inline;
+  justify-content: center;
+}
+
 .footer p {
   font-size: 15px;
 }
