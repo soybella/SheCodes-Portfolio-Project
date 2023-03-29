@@ -58,9 +58,14 @@ img {
   box-shadow: var(--box-shadow);
 }
 
-.heart-logo {
+/* .heart-logo {
   color: var(--backup-color);
   padding: 5px;
+} */
+
+.logo-small {
+  max-height: 70px;
+  box-shadow: none;
 }
 
 .navbar-list {
