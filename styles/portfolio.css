@@ -199,12 +199,17 @@ img {
   display: block;
   list-style-type: none;
   text-align: center;
+  padding-left: 0;
 }
 
 .icons li {
   display: inline;
-  padding: 20px;
+  padding: 10px;
+}
+
+.icons a {
   color: var(--secondary-color);
+  text-decoration: none;
 }
 
 .icons i {
